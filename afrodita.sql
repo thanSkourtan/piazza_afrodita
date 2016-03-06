@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 13, 2015 at 05:01 PM
+-- Generation Time: Mar 06, 2016 at 08:41 PM
 -- Server version: 5.6.21
 -- PHP Version: 5.6.3
 
@@ -224,19 +224,7 @@ INSERT INTO `orders` (`id`, `quantities`, `TotalPrice`, `name`, `last`, `phone`,
 (34, '9,8,7,', '167.30', 'fsdf', '', '5454353453', '1,2,6,', ''),
 (35, '1,,', '34.20', 'fdsf', '', '3454553453', '2,7,', ''),
 (36, '4,3,2,', '62.30', 'Df', '', '5444444444', '1,2,6,', ''),
-(37, '2,,', '35.10', 'Df', '', '5444444444', '2,6,', ''),
-(38, '2,,', '35.10', 'Df', '', '5444444444', '2,6,', ''),
-(39, '9,8,7,', '167.30', 'fdf', '', '5345345454', '1,2,6,', ''),
-(40, '9,7,', '113.70', 'fdf', '', '5345345454', '1,6,', ''),
-(41, '6,7,', '93.30', 'fdf', '', '5345345454', '1,6,', ''),
-(42, '6,7,', '93.30', 'fdf', '', '5345345454', '1,6,', ''),
-(43, '6,7,', '93.30', 'fdf', '', '5345345454', '1,6,', ''),
-(44, '7,', '52.50', 'fdf', '', '5345345454', '6,', ''),
-(45, '3,7,5,', '113.70', 'fds', '', '4534534534', '25,26,27,', 'gfdgf'),
-(46, '1,2,1,3,', '57.80', 'Afro', '', '6945893357', '24,25,31,39,', 'Î ÎµÏÎ¹ÎºÎ»Î­Î¿Ï…Ï‚ 61'),
-(47, '1,2,5,', '67.80', 'Dimitris', 'Vrettos', '6944747844', '6,7,10,', 'Olympias 28, Agios Eleytherios'),
-(48, '3,2,3,', '62.40', 'Thanasis', 'Skourtaniotis', '6945893357', '2,6,10,', 'PERIKLEOUS 61,$%$%^^'),
-(49, '1,', '6.80', 'Thanos', 'Skourtaniotis', '6945893357', '1,', 'perikleous 61 nea chalkidona');
+(37, '2,,', '35.10', 'Df', '', '5444444444', '2,6,', '');
 
 -- --------------------------------------------------------
 
@@ -253,7 +241,7 @@ CREATE TABLE IF NOT EXISTS `reservation` (
   `time` time NOT NULL,
   `noOfGuests` int(11) NOT NULL,
   `special` longtext NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `reservation`
@@ -261,13 +249,11 @@ CREATE TABLE IF NOT EXISTS `reservation` (
 
 INSERT INTO `reservation` (`id`, `name`, `phone`, `email`, `date`, `time`, `noOfGuests`, `special`) VALUES
 (1, 'fsdf', '5454545454', 'dfsf@sdff.com', '2015-08-19', '05:08:19', 4, 'fsaf'),
-(2, 'fsaf', '5456464566', 'thanpar@yahoo.com', '0000-00-00', '00:00:00', 0, '5'),
-(3, 'fdsafdas', '1216345156', 'thanpar@yahoo.com', '0000-00-00', '00:00:00', 0, '5'),
-(4, 'fsdaf', '5454564646', 'thanpar@yahoo.com', '0000-00-00', '00:00:00', 5, '5'),
 (5, 'fsaf', '5465465456', 'asf@fsdas.com', '2015-09-04', '00:00:00', 5, '5'),
 (6, 'lalala', '3445345345', 'asf@fsdas.com', '2015-08-21', '13:01:00', 5, '5'),
 (7, 'fsaf', '4545646546', 'asf@fsdas.com', '2015-08-28', '13:01:00', 5, 'gfsdgf'),
-(8, 'dsfas', '5464564564', 'asf@fsdas.com', '2015-01-09', '13:01:00', 5, '5564');
+(8, 'dsfas', '5464564564', 'asf@fsdas.com', '2015-01-09', '13:01:00', 5, '5564'),
+(9, 'fdsfa', '3443443434', 'gdfsd@fdsf.com', '2015-01-01', '21:00:00', 3, '');
 
 -- --------------------------------------------------------
 
@@ -285,22 +271,14 @@ CREATE TABLE IF NOT EXISTS `users` (
   `address` varchar(200) NOT NULL,
   `privilege` int(10) NOT NULL,
   `email` varchar(200) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=54 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=48 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `users`
 --
 
 INSERT INTO `users` (`id`, `username`, `firstName`, `lastName`, `password`, `phone`, `address`, `privilege`, `email`) VALUES
-(1, 'thanpar', 'Thanos', 'Skourtaniotis', '5baa61e4c9b93f3f0682250b6cf8331b7ee68fd8', '6945893357', 'perikleous 61 nea chalkidona', 1, 'ffs@yahoo.com'),
-(2, 'afrokon', 'Afro', 'Kon', '5baa61e4c9b93f3f0682250b6cf8331b7ee68fd8', '54654568745', '????????? 6 ????? ?????????', 1, 'lalal@hotmail.com'),
-(3, 'dimi', 'dimitris', 'vrettos', '5baa61e4c9b93f3f0682250b6cf8331b7ee68fd8', '6944747844', 'olipmpias 16', 3, 'fsdfs@email.com'),
-(4, 'ilskou', 'ilektra', 'skourtanioti', '5baa61e4c9b93f3f0682250b6cf8331b7ee68fd8', '5456654456', 'kfjslfjs 56 kfjskfal', 2, 'fdsf@msn.com'),
-(11, 'fsdfupdate', 'update', 'update', '0a25ba5991316bdda4a9b3abcee2106016df28a0', 'asfasdupdate', 'fsdupdate', 1, 'asf@fsdas.comupdate'),
-(28, 'than82', 'thanos', 'karathanos', 'password', '6945893357', 'Î ÎµÏÎ¹ÎºÎ»Î­Î¿Ï…Ï‚ 61', 3, 'asf@fsdas.com'),
-(45, 'dFas', 'fsda', 'sfda', 'fsa', '', '', 3, 'asf@fsdas.com'),
-(46, 'fsda', 'Af', 'asf', 'asf', '', '', 3, 'asf@fsdas.com'),
-(47, 'fsadf', 'fdas', 'dfa', 'asfda', '', '', 3, 'asf@fsdas.com');
+(1, 'thanpar', 'Thanos', '', '5baa61e4c9b93f3f0682250b6cf8331b7ee68fd8', '', '', 1, 'ffs@yahoo.com');
 
 --
 -- Indexes for dumped tables
@@ -392,12 +370,12 @@ MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=50;
 -- AUTO_INCREMENT for table `reservation`
 --
 ALTER TABLE `reservation`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=9;
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=10;
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=54;
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=48;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
