@@ -1,7 +1,7 @@
 # piazza_afrodita
 A dynamic website built for educational purposes with the use of php, jQuery, css bootstrap, html, sql.
 
-It features a main website with:
+It features a main website for an italian restaurant with:
 
 1. A login/signup system with 3 different types of priviledges assigned to users. 
 2. A reservation system.
