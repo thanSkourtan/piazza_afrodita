@@ -3,7 +3,7 @@ A dynamic website built for educational purposes with the use of php, jQuery, cs
 
 It features a main website with:
 
-1. A login/signup system with assigned priviledges to 3 types of users. 
+1. A login/signup system with 3 different types of priviledges assigned to users. 
 2. A reservation system.
 3. An ordering system.
 4. A photo gallery.
