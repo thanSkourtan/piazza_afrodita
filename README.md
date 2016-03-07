@@ -10,8 +10,8 @@ It features a main website for an italian restaurant with:
 
 and an administrator site with
 
-1. A user manager system.
-2. A news - menu - reservation - order - gallery manager system.
+1. A user management system.
+2. A news - menu - reservation - order - gallery management system.
 
 Both sites use ajax through jQuery in order to make asynchronous calls to the database.
 
